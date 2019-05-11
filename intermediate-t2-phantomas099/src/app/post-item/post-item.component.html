@@ -1,0 +1,4 @@
+<H1 (click)="loadComments(myPost.id)">{{myPost.title}}</H1>
+<h2 *ngIf="loading">იტვირთება...</h2>
+<app-comments *ngIf="!loading" [comments]="comments"></app-comments>
+
